@@ -17,7 +17,7 @@ export default async function page({ params, searchParams }: any) {
   const configurations = await fetchUser(id, token);
   return (
     <div>
-      <PeopleAndSharingConfigs configurations={configurations} />
+      <PeopleAndSharingConfigs user={configurations} />
     </div>
   );
 }
